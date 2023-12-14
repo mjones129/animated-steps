@@ -1,0 +1,11 @@
+.glide__bullets {
+    background-color: red;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.glide__slide--active {
+    border: 5px solid green;
+}
