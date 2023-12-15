@@ -113,7 +113,7 @@ As mentioned above, this is a WordPress plugin that will depend on a few other t
 2. create a new folder in your plugins director and name it `animated-steps`.
 3. Navigate inside the `animated-steps` folder and clone the repo
    ```sh
-   git clone git@gitlab.4miles.com:marketing/animated-steps.git .
+   git clone git@github.com:mjones129/animated-steps.git .
    ```
    Don't forget the dot at the end!
 4. Activate the plugin in the `wp-admin` area.
