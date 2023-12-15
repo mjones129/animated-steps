@@ -72,4 +72,4 @@ function as_check_for_shortcodes() {
         wp_enqueue_script('glide_config', plugin_dir_url(__FILE__) . 'js/slideshowConfig.js', array( 'glidejs' ), null, true);
     }
 }
- add_action('init', 'as_check_for_shortcodes');
+ add_action('wp_loaded', 'as_check_for_shortcodes');
