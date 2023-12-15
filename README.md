@@ -86,7 +86,7 @@ This plugin allows users to insert animated steps slideshows with a simple short
 
 [![Glide][GlideJS]][Glide-url]
 
-[![Deploybot][Deploybot]][Deploybot-url]
+<!-- [![Deploybot][Deploybot]][Deploybot-url] -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,8 +102,8 @@ It may go without saying, but it may not, so I'm just going to say it anyway, th
 As mentioned above, this is a WordPress plugin that will depend on a few other things being in place. Here's a brief rundown of what's required:
 
 * WordPress version 6.4.2 or later
-* ACF Pro vserion 6.2.4 or later
-* MilesIT Blocks theme (version unknown)
+* ~~ACF Pro vserion 6.2.4 or later~~
+* ~~MilesIT Blocks theme (version unknown)~~
 
 
 ### Installation
@@ -137,7 +137,10 @@ Currently in development, when it reaches completion, the user should be able to
 
 - [x] Register slider shortcode on activation
 - [x] Import and configure GlideJS to power slider
-- [ ] Reload (or replay) animated SVGs on slider movement
+- [x] Reload (or replay) animated SVGs on slider movement
+- [ ] User defined images without depending on ACF
+- [ ] User defined button text
+- [ ] Implement ID system so multiple unique slideshows can exist in the same environment
 
 See the [open issues](https://gitlab.4miles.com/marketing/adopt-a-horse/-/issues) for a full list of proposed features (and known issues).
 
