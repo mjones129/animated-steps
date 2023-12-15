@@ -12,14 +12,16 @@ const sliderConfig = {
 let glide = new Glide('.glide', sliderConfig);
 let activeLI
 
-glide.on('move.after', function() {
-    activeLI = document.querySelector('.glide__slide--active');
-    let activeImg = activeLI.querySelector(':scope > img');
-    let someHash = Math.floor(Math.random() * 90000) + 10000;
-    activeImg.src = `https://www.milesit.com/wp-content/uploads/Consult-Infographic-recolored.svg?${someHash}`;
-    console.log(activeImg.src);
-    // fetch(activeSlide.src);
-});
+//reload image URL on slide move (only useful for animated SVGs that need to restart with every new slide)
+
+// glide.on('move.after', function() {
+//     activeLI = document.querySelector('.glide__slide--active');
+//     let activeImg = activeLI.querySelector(':scope > img');
+//     let someHash = Math.floor(Math.random() * 90000) + 10000;
+//     activeImg.src = `${activeImg}?${someHash}`;
+//     console.log(activeImg.src);
+//     // fetch(activeSlide.src);
+// });
 
 glide.mount();
 
