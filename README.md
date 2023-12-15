@@ -125,8 +125,21 @@ As mentioned above, this is a WordPress plugin that will depend on a few other t
 <!-- How It Works -->
 ## How It Works
 
-Currently in development, when it reaches completion, the user should be able to call a shortcode and pass a few paramters (image URLS, and slide titles) and have a fully responsive step-by-step slider.
+To create a default slider, simply insert the shortcode `[as]`. This will return a simple slider with 3 slides and buttons.
+To customize the content of the slider, simply pass in parameters.
 
+### Custom parameters
+
+* `btn1` = `$string`
+* `btn2` = `$string`
+* `btn3` = `$string`
+* `img1` = `$url`
+* `img2` = `$url`
+* `img3` = `$url`
+
+Full Example:
+
+`[as btn1="Step 1" btn2="Step 2" btn3="Step 3" img1="https://source.unsplash.com/random/" img2="https://source.unsplash.com/random/" img3="https://source.unsplash.com/yEW23jxVsNI"]`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,7 +153,7 @@ Currently in development, when it reaches completion, the user should be able to
 - [x] Reload (or replay) animated SVGs on slider movement
 - [x] User defined images without depending on ACF
 - [x] User defined button text
-- [ ] Implement ID system so multiple unique slideshows can exist in the same environment
+- [x] Instantiate a new instance of GlideJS for each element with a class name of `.glide`
 
 See the [open issues](https://gitlab.4miles.com/marketing/adopt-a-horse/-/issues) for a full list of proposed features (and known issues).
 

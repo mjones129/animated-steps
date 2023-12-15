@@ -1,5 +1,5 @@
 
-// const sliders = document.querySelectorAll('.glide');
+const sliders = document.querySelectorAll('.glide');
 const sliderConfig = {
     type: 'carousel',
     startAt: 0,
@@ -9,8 +9,7 @@ const sliderConfig = {
     gap: 10
 };
 
-let glide = new Glide('.glide', sliderConfig);
-let activeLI
+// let glide = new Glide('.glide', sliderConfig);
 
 //reload image URL on slide move (only useful for animated SVGs that need to restart with every new slide)
 
@@ -23,7 +22,10 @@ let activeLI
 //     // fetch(activeSlide.src);
 // });
 
-glide.mount();
+sliders.forEach(item => {
+    new Glide(item, sliderConfig).mount();
+});
+
 
 
 
