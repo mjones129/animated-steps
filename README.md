@@ -138,8 +138,8 @@ Currently in development, when it reaches completion, the user should be able to
 - [x] Register slider shortcode on activation
 - [x] Import and configure GlideJS to power slider
 - [x] Reload (or replay) animated SVGs on slider movement
-- [ ] User defined images without depending on ACF
-- [ ] User defined button text
+- [x] User defined images without depending on ACF
+- [x] User defined button text
 - [ ] Implement ID system so multiple unique slideshows can exist in the same environment
 
 See the [open issues](https://gitlab.4miles.com/marketing/adopt-a-horse/-/issues) for a full list of proposed features (and known issues).
