@@ -29,30 +29,31 @@ function as_custom_shortcode($atts = []) {
             'btn2' => 'Button 2',
             'btn3' => 'Button 3',
         ), $atts);
-?>
-<div class="as-container">
-    <div class="glide">
-        <div class="glide__bullets" data-glide-el="controls[nav]">
-            <button class="glide__bullet" data-glide-dir="=0"><?php echo $as_atts['btn1'] ?></button>
-            <button class="glide__bullet" data-glide-dir="=1"><?php echo $as_atts['btn2'] ?></button>
-            <button class="glide__bullet" data-glide-dir="=2"><?php echo $as_atts['btn3'] ?></button>
-        </div>
-        <div class="glide_track" data-glide-el="track">
-            <ul class="glide__slides">
-                <li>
-                    <img class="glide__slide" src="<?php echo $as_atts['img1'] ?>" />
-                </li>
-                <li>
-                    <img class="glide__slide" src="<?php echo $as_atts['img2'] ?>" />
-                </li>
-                <li>
-                    <img class="glide__slide" src="<?php echo $as_atts['img3'] ?>" />
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<?php }
+
+$o = '<div class="as-container">';
+$o .= '<div class="glide">';
+$o .= '<div class="glide__bullets" data-glide-el="controls[nav]">';
+$o .= '<button class="glide__bullet" data-glide-dir="=0">' . $as_atts['btn1'] . '</button>';
+$o .= '<button class="glide__bullet" data-glide-dir="=1">' . $as_atts['btn2'] . '</button>';
+$o .= '<button class="glide__bullet" data-glide-dir="=2">' . $as_atts['btn3'] . '</button>';
+$o .= '</div>';
+$o .= '<div class="glide_track" data-glide-el="track">';
+$o .= '<ul class="glide__slides">';
+$o .= '<li>';
+$o .= '<img class="glide__slide" src="' . $as_atts['img1'] . '" />';
+$o .= '</li>';
+$o .= '<li>';
+$o .= '<img class="glide__slide" src="' . $as_atts['img2'] . '" />';
+$o .= '</li>';
+$o .= '<li>';
+$o .= '<img class="glide__slide" src="' . $as_atts['img3'] . '" />';
+$o .= '</li>';
+$o .= '</ul>';
+$o .= '</div>';
+$o .= '</div>';
+$o .= '</div>';
+return $o;
+}
 add_shortcode( 'as', 'as_custom_shortcode');
 
 
@@ -71,4 +72,4 @@ function as_check_for_shortcodes() {
         wp_enqueue_script('glide_config', plugin_dir_url(__FILE__) . 'js/slideshowConfig.js', array( 'glidejs' ), null, true);
     }
 }
- add_action('wp_loaded', 'as_check_for_shortcodes');
+ add_action('init', 'as_check_for_shortcodes');
