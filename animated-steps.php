@@ -15,12 +15,6 @@
 
  //Register Animated Steps Shortcode
 
-
-
-
-
-
-
 function as_custom_shortcode($atts = []) {
     //normalize attribute keys, lowercase
     $atts = array_change_key_case((array) $atts, CASE_LOWER);
@@ -59,10 +53,7 @@ function as_custom_shortcode($atts = []) {
     </div>
 </div>
 <?php }
-
 add_shortcode( 'as', 'as_custom_shortcode');
-
-
 
 
  //register shortcode on activation
