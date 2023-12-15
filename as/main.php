@@ -8,13 +8,13 @@
         <div class="glide_track" data-glide-el="track">
             <ul class="glide__slides">
                 <li>
-                    <a href="#"><img class="glide__slide" src="https://www.milesit.com/wp-content/uploads/Consult-Infographic-recolored.svg" /></a>
+                    <img class="glide__slide" src="https://www.milesit.com/wp-content/uploads/Consult-Infographic-recolored.svg" />
                 </li>
                 <li>
-                    <a href="#"><img class="glide__slide" src="https://www.milesit.com/wp-content/uploads/Consult-Infographic-recolored.svg" /></a>
+                    <img class="glide__slide" src="https://www.milesit.com/wp-content/uploads/Consult-Infographic-recolored.svg" />
                 </li>
                 <li>
-                    <a href="#"><img class="glide__slide" src="https://www.milesit.com/wp-content/uploads/Consult-Infographic-recolored.svg" /></a>
+                    <img class="glide__slide" src="https://www.milesit.com/wp-content/uploads/Consult-Infographic-recolored.svg" />
                 </li>
             </ul>
         </div>

@@ -10,13 +10,14 @@ const sliderConfig = {
 };
 
 let glide = new Glide('.glide', sliderConfig);
-
+let activeLI
 
 glide.on('move.after', function() {
+    activeLI = document.querySelector('.glide__slide--active');
+    let activeImg = activeLI.querySelector(':scope > img');
     let someHash = Math.floor(Math.random() * 90000) + 10000;
-    let activeSlide = document.querySelectorAll('.glide__slide--active a img');
-    activeSlide.src = `https://www.milesit.com/wp-content/uploads/Consult-Infographic-recolored.svg?${someHash}`;
-    console.log(activeSlide.src);
+    activeImg.src = `https://www.milesit.com/wp-content/uploads/Consult-Infographic-recolored.svg?${someHash}`;
+    console.log(activeImg.src);
     // fetch(activeSlide.src);
 });
 
