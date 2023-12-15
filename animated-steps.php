@@ -64,11 +64,11 @@ add_shortcode( 'as', 'as_custom_shortcode');
  
 // only load JS and styles if the shortcode is called
 function as_check_for_shortcodes() {
-    if(shortcode_exists('as')) {
+    if(shortcode_exists('as') && !is_admin()) {
         wp_enqueue_script('glidejs', plugin_dir_url(__FILE__) . 'node_modules/@glidejs/glide/dist/glide.min.js', array(), null, true);
         wp_enqueue_style('glide_core', plugin_dir_url(__FILE__) . 'node_modules/@glidejs/glide/dist/css/glide.core.min.css', array(), null, 'all');
         wp_enqueue_style('slide_theme', plugin_dir_url(__FILE__) . 'css/as-style.css', array(), null, 'all');
-        wp_enqueue_script('glide_config', plugin_dir_url(__FILE__) . 'js/slideshowConfig.js', array(), null, true);
+        wp_enqueue_script('glide_config', plugin_dir_url(__FILE__) . 'js/slideshowConfig.js', array( 'glidejs' ), null, true);
     }
 }
  add_action('wp_loaded', 'as_check_for_shortcodes');
