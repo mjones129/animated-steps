@@ -23,7 +23,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/mjones129/animated-steps">
     <img src="images/steps.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -34,9 +34,9 @@
     <br />
     <br />
     <br />    
-    <a href="https://gitlab.4miles.com/marketing/animated-steps/-/issues">Report Bug</a>
+    <a href="https://github.com/mjones129/animated-steps/issues">Report Bug</a>
     ·
-    <a href="https://gitlab.4miles.com/marketing/animated-steps/-/issues">Request Feature</a>
+    <a href="https://github.com/mjones129/animated-steps/issues">Request Feature</a>
   </p>
 </div>
 
@@ -70,7 +70,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Adopt A Horse Screen Shot][product-screenshot]](https://example.com)
+[![Project Screenshot][product-screenshot]](https://github.com/mjones129/animated-steps)
 
 This plugin allows users to insert animated steps slideshows with a simple shortcode.
 
@@ -110,13 +110,11 @@ As mentioned above, this is a WordPress plugin that will depend on a few other t
 
 1. Access your WordPress install and navigate to the plugins folder. 
     `wp-content/plugins/`.
-2. create a new folder in your plugins director and name it `animated-steps`.
-3. Navigate inside the `animated-steps` folder and clone the repo
+2. Clone the repo
    ```sh
-   git clone git@github.com:mjones129/animated-steps.git .
+   git clone git@github.com:mjones129/animated-steps.git
    ```
-   Don't forget the dot at the end!
-4. Activate the plugin in the `wp-admin` area.
+3. Activate the plugin in the `wp-admin` area.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,7 +153,7 @@ Full Example:
 - [x] User defined button text
 - [x] Instantiate a new instance of GlideJS for each element with a class name of `.glide`
 
-See the [open issues](https://gitlab.4miles.com/marketing/adopt-a-horse/-/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/mjones129/animated-steps/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,9 +178,6 @@ Don't forget to give the project a star! Thanks again!
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
 [Deploybot]: https://img.shields.io/badge/deployed_with-Deploybot-white
 [Deploybot-url]: https://milesit.deploybot.com/

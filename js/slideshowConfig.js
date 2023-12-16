@@ -9,9 +9,9 @@ const sliderConfig = {
     gap: 10
 };
 
-// let glide = new Glide('.glide', sliderConfig);
-
 //reload image URL on slide move (only useful for animated SVGs that need to restart with every new slide)
+
+// let glide = new Glide('.glide', sliderConfig);
 
 // glide.on('move.after', function() {
 //     activeLI = document.querySelector('.glide__slide--active');

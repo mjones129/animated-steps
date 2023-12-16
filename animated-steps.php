@@ -3,7 +3,7 @@
  * Plugin Name: Animated Steps
  * Plugin URI: https://www.google.com/search?q=escilator
  * Description: Generate animated steps sliders with ease.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Requires at least: 6.4.2
  * Requires PHP: 8.2
  * Author: Matt Jones
@@ -23,7 +23,7 @@ function as_custom_shortcode($atts = []) {
     $as_atts = shortcode_atts(
         array(
             'img1' => 'https://source.unsplash.com/random',
-            'img2' => 'https://source.unsplash.com/random',
+            'img2' => 'https://source.unsplash.com/8wWpDF4Av-Y',
             'img3' => 'https://source.unsplash.com/random',
             'btn1' => 'Button 1',
             'btn2' => 'Button 2',
