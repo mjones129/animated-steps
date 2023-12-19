@@ -103,7 +103,6 @@ As mentioned above, this is a WordPress plugin that will depend on a few other t
 
 * WordPress version 6.4.2 or later
 * ~~ACF Pro vserion 6.2.4 or later~~
-* ~~MilesIT Blocks theme (version unknown)~~
 
 
 ### Installation
@@ -180,7 +179,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [product-screenshot]: images/screenshot.png
 [Deploybot]: https://img.shields.io/badge/deployed_with-Deploybot-white
-[Deploybot-url]: https://milesit.deploybot.com/
+[Deploybot-url]: https://username.deploybot.com/
 [NodeJS]: https://img.shields.io/badge/v16.20.2-NodeJS-green
 [Node-url]: https://nodejs.org/
 [NPM]: https://img.shields.io/badge/v8.19.4-NPM-CD0000
